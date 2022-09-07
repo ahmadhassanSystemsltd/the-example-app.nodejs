@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "karma start",
+    "lint": "eslint **/*.js -c config.eslintrc -f checkstyle"
     "start:watch": "nodemon ./bin/www --ignore public/",
     "start:dev": "node ./bin/www",
     "debug": "node debug ./bin/www",
@@ -23,6 +25,14 @@
     "node": ">=8.9.3"
   },
   "dependencies": {
+    "karma-cli": "*",
+    "phantomjs": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-junit-reporter": "*",
+    "karma-chrome-launcher": "*",
+    "eslint": "*",
     "body-parser": "^1.18.2",
     "contentful": "^6.0.0",
     "cookie-parser": "~1.4.3",
